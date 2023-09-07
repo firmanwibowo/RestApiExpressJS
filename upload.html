@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Gambar</title>
+</head>
+<body>
+    <h1>Upload Gambar</h1>
+    <form action="http://localhost:4040/profile/edit-foto" method="POST" enctype="multipart/form-data">
+        <label> Input User ID: </label><input type="text" name="userId"> <br><br>
+        <label> Input Image: </label><input type="file" name="image" accept="image/*">
+        <input type="submit" value="Unggah Gambar">
+    </form>
+</body>
+</html>
