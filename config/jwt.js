@@ -19,7 +19,6 @@ function authenticateToken(req, res, next) {
   
       // Set data pengguna dalam req.user
       req.user = user;
-  
       next();
     });
 }
@@ -44,6 +43,7 @@ function verifyToken(req, res, next) {
       req.user = decoded;
       next();
     });
+   
 }
 
 module.exports = {
